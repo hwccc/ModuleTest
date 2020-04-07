@@ -102,6 +102,24 @@ public class StringUtil {
 
 
     /**
+     * 是否包含阿拉伯数字
+     *
+     * @param result
+     * @return
+     */
+    public static boolean isContainArabic2(String result) {
+        if (TextUtils.isEmpty(result)) {
+            return false;
+        } else {
+            String regEx = "\\d+";
+            Pattern p = Pattern.compile(regEx);
+            Matcher m = p.matcher(result);
+            return m.find();
+        }
+    }
+
+
+    /**
      * byte转16进字符串
      *
      * @param b
