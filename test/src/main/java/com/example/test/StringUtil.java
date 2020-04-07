@@ -102,7 +102,7 @@ public class StringUtil {
 
 
     /**
-     * 是否包含阿拉伯数字
+     * 是否包含阿拉伯数字方法2
      *
      * @param result
      * @return
